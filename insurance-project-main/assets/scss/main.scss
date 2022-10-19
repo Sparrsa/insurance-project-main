@@ -1,0 +1,25 @@
+@use "pages/landing-page";
+
+@use "pages/contact-page";
+
+@use "layout/header-page";
+
+@use "text/text";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    display: block;
+    width: 100vw;
+    max-width: 1600px;
+    margin: 0 auto;
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Frank Ruhl Libre', serif;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Send a message to us using the form or find our place using the map." />
+    <title>Contact</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
+    <link rel="stylesheet" href="assets/stylesheet/normalize.min.css" />
+    <link
+      rel="preconnect"
+      href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d73456.75799285264!2d-122.49923978145007!3d37.76793388742825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20Kalifornien%2C%20USA!5e0!3m2!1ssv!2sse!4v1665651718760!5m2!1ssv!2sse" />
+
+    <link rel="stylesheet" href="./assets/stylesheet/googlefonts.css" />
+
+    <link rel="stylesheet" href="assets/stylesheet/main.css" />
+  </head>
+  <body itemscope itemtype="https://schema.org/ContactPage">
+    <header
+      itemprop="mainEntityOfPage"
+      class="contact-page-header"
+      itemscope
+      itemtype="https://schema.org/WPHeader">
+      <div
+        itemscope
+        itemtype="https://schema.org/Product"
+        class="page-header-main">
+        <h1 class="contact-headline">Oh hello there!</h1>
+        <img
+          itemprop="image"
+          class="header-img"
+          src="assets/images/man-baby.webp"
+          alt="a man and a baby" />
+      </div>
+      <nav class="contact-page-nav" itemprop="mainEntity">
+        <ul
+          itemscope
+          itemtype="https://schema.org/BreadcrumbList"
+          class="nav-list">
+          <li
+            itemprop="itemListElement"
+            itemscope
+            itemtype="https://schema.org/ListItem"
+            class="list-item">
+            <a itemprop="item" href="index.html">Home</a>
+          </li>
+          <li
+            itemprop="itemListElement"
+            itemscope
+            itemtype="https://schema.org/ListItem"
+            class="list-item">
+            <a itemprop="item" href="#">Our offer</a>
+          </li>
+          <li
+            itemprop="itemListElement"
+            itemscope
+            itemtype="https://schema.org/ListItem"
+            class="list-item">
+            <a itemprop="item" href="#">Why us</a>
+          </li>
+          <li
+            itemprop="itemListElement"
+            itemscope
+            itemtype="https://schema.org/ListItem"
+            class="list-item">
+            <a itemprop="item" href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="contact-page-content" itemprop="mainContentOfPage">
+      <h2 class="headline">Whats on your mind?</h2>
+      <form class="page-form">
+        <label class="form-label" for="email">Your email</label>
+        <input class="form-input" required id="email" type="email" />
+        <label class="form-label" for="message">Your message</label>
+        <textarea
+          rows="5"
+          class="form-input"
+          required
+          id="message"
+          placeholder="Dear Insurance company..."></textarea>
+        <button class="form-btn">SEND MESSAGE</button>
+      </form>
+      <div>
+        <div
+          itemscope
+          itemtype="https://schema.org/InsuranceAgency"
+          class="visit-card">
+          <h2 class="headline">Come visit us!</h2>
+          <p itemprop="address" class="card-text">2219 Griffin Street</p>
+          <p class="card-text">San Francisco</p>
+        </div>
+        <iframe
+          class="map-image"
+          title="google map of location"
+          id="mapframe"
+          width="300"
+          height="500"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d73456.75799285264!2d-122.49923978145007!3d37.76793388742825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20Kalifornien%2C%20USA!5e0!3m2!1ssv!2sse!4v1665651718760!5m2!1ssv!2sse"
+          style="border: 0"
+          allowfullscreen="true"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <button class="map-btn" onclick="onClick(event)">Expand</button>
+        <script src="assets/scripts/focus.js"></script>
+      </div>
+    </section>
+  </body>
+</html>
