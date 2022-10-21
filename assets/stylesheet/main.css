@@ -33,10 +33,15 @@
 
 .page-about-us {
   background-color: #FAB131;
+  opacity: 0;
   -webkit-animation-name: fade-in-top;
           animation-name: fade-in-top;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
 }
 
 .page-cards,
@@ -300,25 +305,38 @@
 }
 .contact-page-content .headline {
   color: #fff;
+  opacity: 0;
   padding-top: 0.5em;
   margin-bottom: 0.5em;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .contact-page-content .headline:first-child {
   -webkit-animation-name: fade-in;
           animation-name: fade-in;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-duration: 0.25s;
+          animation-duration: 0.25s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 .contact-page-content .page-form {
   display: flex;
   margin: 0 auto;
   flex-wrap: wrap;
   width: 90%;
+  opacity: 0;
   padding-bottom: 6em;
   -webkit-animation-name: fade-in;
           animation-name: fade-in;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 0.25s;
+          animation-duration: 0.25s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 .contact-page-content .page-form .form-label {
   color: #e6e6e6;
@@ -343,11 +361,6 @@
   outline: none;
   transition: ease-out 0.5s;
 }
-.contact-page-content .page-form .form-btn:hover {
-  background-color: #FAB131;
-  color: black;
-  scale: 1.2;
-}
 .contact-page-content .visit-card {
   position: relative;
   background-color: #FAB131;
@@ -356,10 +369,15 @@
   margin: -6em auto 0 auto;
   width: 90%;
   z-index: 5;
+  opacity: 0;
   -webkit-animation-name: fade-in;
           animation-name: fade-in;
-  -webkit-animation-duration: 2.5s;
-          animation-duration: 2.5s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-duration: 0.25s;
+          animation-duration: 0.25s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 .contact-page-content .visit-card .headline {
   width: 100%;
@@ -377,10 +395,15 @@
   width: 100%;
   height: 25em;
   border: none;
+  opacity: 0;
   -webkit-animation-name: fade-in;
           animation-name: fade-in;
-  -webkit-animation-duration: 2.5s;
-          animation-duration: 2.5s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-duration: 0.25s;
+          animation-duration: 0.25s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 .contact-page-content .map-btn {
   display: block;
@@ -392,11 +415,6 @@
   cursor: pointer;
   outline: none;
   transition: ease-out 0.5s;
-}
-.contact-page-content .map-btn:hover {
-  background-color: #FAB131;
-  color: black;
-  scale: 1.2;
 }
 .contact-page-content .form-btn:active {
   box-shadow: 0 0 0 2px;
@@ -420,6 +438,11 @@
   .contact-page-content .page-form .form-input:nth-child(4) {
     height: 12em;
   }
+  .contact-page-content .page-form .form-btn:hover {
+    background-color: #FAB131;
+    color: black;
+    scale: 1.2;
+  }
   .contact-page-content div {
     width: 100%;
   }
@@ -439,6 +462,11 @@
   .contact-page-content div .map-image {
     margin: -18em 0 0 0;
     height: 30em;
+  }
+  .contact-page-content .map-btn:hover {
+    background-color: #FAB131;
+    color: black;
+    scale: 1.2;
   }
 }
 .page-header {
@@ -474,9 +502,6 @@
 @-webkit-keyframes fade-in {
   0% {
     opacity: 0;
-  }
-  50% {
-    opacity: 0;
     transform: translateX(-75px);
   }
   100% {
@@ -488,9 +513,6 @@
 @keyframes fade-in {
   0% {
     opacity: 0;
-  }
-  50% {
-    opacity: 0;
     transform: translateX(-75px);
   }
   100% {
@@ -501,9 +523,6 @@
 @-webkit-keyframes fade-in-top {
   0% {
     opacity: 0;
-  }
-  50% {
-    opacity: 0;
     transform: translateY(-75px);
   }
   100% {
@@ -513,9 +532,6 @@
 }
 @keyframes fade-in-top {
   0% {
-    opacity: 0;
-  }
-  50% {
     opacity: 0;
     transform: translateY(-75px);
   }
@@ -538,11 +554,6 @@
 .join-btn a {
   text-decoration: none;
   color: black;
-}
-
-.join-btn:hover {
-  background-color: #FAB131;
-  scale: 1.1;
 }
 
 .img-family {
@@ -584,20 +595,20 @@
           animation-direction: normal;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  -webkit-animation-duration: 0.75s;
+          animation-duration: 0.75s;
 }
 .nav-list .list-item:nth-child(2) a {
   -webkit-animation-delay: 0.25s;
           animation-delay: 0.25s;
 }
 .nav-list .list-item:nth-child(3) a {
-  -webkit-animation-delay: 0.75s;
-          animation-delay: 0.75s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }
 .nav-list .list-item:nth-child(4) a {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
 }
 @-webkit-keyframes pop-up {
   from {
@@ -659,24 +670,23 @@
 .contact-page-header {
   background-color: #C7DDEA;
 }
-
-.page-header-main {
+.contact-page-header .page-header-main {
   position: relative;
   padding-top: 2em;
   display: flex;
   height: 20em;
   -webkit-animation-name: fade-in;
           animation-name: fade-in;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
 }
-.page-header-main .contact-headline {
+.contact-page-header .page-header-main .contact-headline {
   font-size: 3rem;
   width: 4em;
   margin-top: 1.5em;
   margin-left: 0em;
 }
-.page-header-main .header-img {
+.contact-page-header .page-header-main .header-img {
   right: 0;
   position: absolute;
   margin-right: 0.3em;
@@ -753,13 +763,17 @@
   }
   .join-btn {
     position: relative;
-    margin: 7em 1em 0em 17em;
+    margin: 5em 1em 0em 15em;
     background-color: #fff;
-    padding: 2em 6em;
+    padding: 1.8em 6em;
     border-radius: 9999px;
     box-shadow: 0.1em 0.1em 0.2em;
     border: none;
     z-index: 5;
+  }
+  .join-btn:hover {
+    background-color: #FAB131;
+    scale: 1.1;
   }
   .header-subcontainer {
     height: 24em;
@@ -774,16 +788,17 @@
     align-items: center;
     text-align: center;
     padding-top: 0em;
-    margin-left: 8em;
   }
   .page-header-main .contact-headline {
     margin-top: 0;
+    padding-bottom: 2em;
     flex: 0 1 35%;
+    margin-right: -5em;
   }
   .page-header-main .header-img {
     position: static;
     flex: 0 0 10%;
-    margin-left: 5em;
+    margin-left: 15em;
   }
   .contact-page-nav {
     width: 100%;
@@ -806,6 +821,9 @@
     background-color: rgb(231, 231, 231);
     transition: ease-out 0.3s;
   }
+  .contact-page-header .page-header-main .header-img {
+    position: static;
+  }
 }
 .headline {
   font-size: 3rem;
@@ -817,7 +835,7 @@
   font-size: 0.85rem;
   letter-spacing: 0.02em;
   line-height: 1.7em;
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Fira Sans", sans-serif, Arial, Helvetica;
   color: rgba(54, 54, 54, 0.781);
 }
 
@@ -827,12 +845,12 @@
 
 .join-btn {
   font-size: 0.8rem;
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Fira Sans", sans-serif, Arial, Helvetica, sans-serif;
   font-weight: 800;
 }
 
 .subcontainer-paragraf {
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Fira Sans", sans-serif, Arial, Helvetica, sans-serif;
   font-weight: 800;
   font-size: 0.8rem;
   color: rgba(61, 22, 0, 0.767);
@@ -844,11 +862,26 @@
 }
 
 .contact-headline {
-  font-size: 3.5rem;
   margin-top: 1.5em;
   font-weight: 800;
   width: 4em;
   padding: 0 0em 0 0.3em;
+}
+
+.form-label {
+  font-family: "Fira Sans", sans-serif, Arial, Helvetica;
+}
+
+.form-input {
+  font-family: "Fira Sans", sans-serif, Arial, Helvetica;
+}
+
+.form-btn {
+  font-family: "Fira Sans", sans-serif, Arial, Helvetica;
+}
+
+.map-btn {
+  font-family: "Fira Sans", sans-serif, Arial, Helvetica;
 }
 
 @media screen and (min-width: 768px) {
